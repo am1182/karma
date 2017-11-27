@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.politics.karma.ActivityMain"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme"
+        app:elevation="0dp"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mainToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:title="karma"
+            app:titleTextColor="@color/colorMediumGrey"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/activityMainContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/colorMediumGrey"
+            />
+
+    </LinearLayout>
+-->
+    <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary"
+        app:menu="@menu/menu_bottom_navigation"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:itemIconTint="@color/color_bottom_navigation"
+        app:itemTextColor="@color/color_bottom_navigation"
+        android:elevation="0dp"
+        app:elevation="0dp"
+        />
+
+</LinearLayout>

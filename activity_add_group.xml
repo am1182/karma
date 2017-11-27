@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.politics.karma.ActivityAddGroup"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme"
+        app:elevation="0dp"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/addGroupToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:title="add content"
+            app:titleTextColor="@color/colorMediumGrey"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabHostAddPost"
+        android:theme="@style/TabWidgetTheme"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:tabStripEnabled="false"
+                android:background="@drawable/button_grey"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="13dp"
+                android:theme="@style/TabWidgetTheme"
+                android:stateListAnimator="@null"
+                />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+
+                <!-- POSTS -->
+                <LinearLayout
+                    android:id="@+id/addPostTab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/colorNude1"
+                    >
+
+                    <!-- TITLE -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="add post"
+                        android:textSize="19dp"
+                        android:textColor="@color/colorDarkGrey"
+
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        />
+
+                    <!-- POST GROUP -->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/addGroupPostGroupEditText"
+
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:maxLength="200"
+                        android:background="@drawable/button_grey"
+                        android:hint="group"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorDarkGrey"
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        />
+
+                    <!-- CONTENT -->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:id="@+id/addGroupPostContentEditText"
+
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:maxLength="20000"
+                        android:gravity="top|left"
+                        android:background="@drawable/button_grey"
+                        android:hint="post content"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorDarkGrey"
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        />
+
+                    <!-- BUTTONS -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+
+                        <Button
+                            android:id="@+id/addGroupSavePostButton"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:elevation="0dp"
+
+                            android:textAllCaps="false"
+                            android:text="save post"
+                            android:textSize="14dp"
+                            android:textColor="@color/colorWhite"
+                            android:background="@drawable/button_primary"
+                            android:stateListAnimator="@null"
+
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            />
+
+                        <Button
+                            android:id="@+id/addGroupCancelPostButton"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:elevation="0dp"
+
+                            android:textAllCaps="false"
+                            android:text="cancel"
+                            android:textSize="14dp"
+                            android:textColor="@color/colorWhite"
+                            android:background="@drawable/button_primary"
+                            android:stateListAnimator="@null"
+
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!-- GROUP -->
+                <LinearLayout
+                    android:id="@+id/addGroupTab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/colorNude1"
+                    >
+
+                    <!-- TITLE -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="add group"
+                        android:textSize="19dp"
+                        android:textColor="@color/colorDarkGrey"
+
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        />
+
+                    <!-- GROUP NAME -->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/addGroupGroupNameEditText"
+
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:maxLength="200"
+                        android:background="@drawable/button_grey"
+                        android:hint="group title"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorDarkGrey"
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        />
+
+                    <!-- GROUP DESCRIPTION -->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:id="@+id/addGroupDescriptionEditText"
+
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:maxLength="70"
+                        android:gravity="top|left"
+                        android:background="@drawable/button_grey"
+                        android:hint="group description"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorDarkGrey"
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        />
+
+                    <!-- BUTTONS -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+
+                        <Button
+                            android:id="@+id/addGroupSaveGroupButton"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:elevation="0dp"
+
+                            android:textAllCaps="false"
+                            android:text="save group"
+                            android:textSize="14dp"
+                            android:textColor="@color/colorWhite"
+                            android:background="@drawable/button_primary"
+                            android:stateListAnimator="@null"
+
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            />
+
+                        <Button
+                            android:id="@+id/addGroupCancelGroupButton"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:elevation="0dp"
+
+                            android:textAllCaps="false"
+                            android:text="cancel"
+                            android:textSize="14dp"
+                            android:textColor="@color/colorWhite"
+                            android:background="@drawable/button_primary"
+                            android:stateListAnimator="@null"
+
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

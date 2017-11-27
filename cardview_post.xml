@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardElevation="0dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="6dp"
+    android:id="@+id/cardviewPost"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/button_nude1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="center_vertical"
+            android:background="@color/colorNude2"
+
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/cardviewPostUsernameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:text="username"
+                    android:textColor="@color/colorDarkGrey"
+                    />
+
+                <TextView
+                    android:id="@+id/cardviewPostDateTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="12/06/2017"
+                    android:textColor="@color/colorMediumDarkGrey"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/cardviewPostGroupNameTextView"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:background="@drawable/button_white"
+                android:text="group name"
+                android:textColor="@color/colorDarkGrey"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:layout_weight="0.97" />
+
+            <Button
+                android:id="@+id/cardviewPostExpandButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_button_arrow_down_transparent"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:stateListAnimator="@null"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="0dp"
+                />
+
+        </LinearLayout>
+<!--
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorNude5"
+            android:layout_marginTop="4dp"
+            />
+-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:id="@+id/cardviewPostContentTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="17sp"
+                android:text="content"
+                android:textColor="@color/colorDarkGrey"
+                android:layout_margin="5dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            >
+
+            <Button
+                android:id="@+id/cardviewPostCommentsButton"
+                android:layout_width="26dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_button_comment" />
+
+            <TextView
+                android:id="@+id/cardviewPostCommentsNumberTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="190dp"
+                android:text="4"
+                android:textSize="15dp"
+                android:textColor="@color/colorDarkGrey"
+                />
+
+            <ToggleButton
+                android:id="@+id/cardviewPostLikeButton"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:textOn=" "
+                android:textOff=" "
+                android:stateListAnimator="@null"
+                android:background="@drawable/button_like"
+                />
+
+            <TextView
+                android:id="@+id/cardviewPostLikesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="5dp"
+                android:text="12"
+                android:textSize="15dp"
+                android:textColor="@color/colorDarkGrey"
+                />
+
+            <ToggleButton
+                android:id="@+id/cardViewPostDislikeButton"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:textOn=" "
+                android:textOff=" "
+                android:stateListAnimator="@null"
+                android:background="@drawable/button_dislike"
+                />
+
+            <TextView
+                android:id="@+id/cardviewPostDislikesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="5dp"
+                android:text="34"
+                android:textSize="15dp"
+                android:textColor="@color/colorDarkGrey"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

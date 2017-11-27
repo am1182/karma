@@ -1,0 +1,294 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.politics.karma.FragmentProfileUser">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/button_white"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="13dp"
+                            android:src="@drawable/pepe"
+                            android:id="@+id/profileUserProfileImage"
+                            android:layout_gravity="center"
+                            android:focusableInTouchMode="true"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center_vertical"
+                            android:layout_gravity="center"
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:text=" "
+                                android:textSize="17dp"
+                                android:textColor="@color/colorDarkGrey"
+                                android:id="@+id/profileUserUsernameTextView"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:orientation="horizontal"
+                                >
+
+                                <LinearLayout
+                                    android:layout_width="140dp"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/button_grey"
+                                    android:gravity="center"
+                                    >
+
+                                    <TextView
+                                        android:layout_width="55dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="3dp"
+                                        android:text="0\nfollowers"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorDarkGrey"
+                                        android:id="@+id/profileUserFollowersTextView"
+                                        android:textSize="12sp"
+                                        />
+
+                                    <TextView
+                                        android:layout_width="55dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="3dp"
+                                        android:text="0\nfollowing"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorDarkGrey"
+                                        android:id="@+id/profileUserFollowingTextView"
+                                        android:textSize="12sp"
+                                        />
+                                    <!--
+                                        <TextView
+                                            android:layout_width="40dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="3dp"
+                                            android:text="0\nposts"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/colorDarkGrey"
+                                            android:id="@+id/homePostsTextView"
+                                            android:textSize="12sp"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="3dp"
+                                            android:text="0\nreputation"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/colorDarkGrey"
+                                            android:id="@+id/homeReputationTextView"
+                                            android:textSize="12sp"
+                                            />
+                                    -->
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="90dp"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/button_grey"
+                                    android:gravity="center"
+                                    android:layout_marginLeft="10dp"
+                                    >
+
+                                    <ToggleButton
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="3dp"
+                                        android:text="follow"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorDarkGrey"
+                                        android:id="@+id/profileUserFollowButton"
+                                        android:textSize="12sp"
+                                        android:textOff=""
+                                        android:textOn=""
+                                        />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/colorMediumGrey" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="13dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/colorDarkGrey"
+                        android:text=" "
+                        android:id="@+id/profileUserBioTextView"
+                        />
+
+                </LinearLayout>
+
+                <TabHost
+                    android:id="@+id/fragmentHomeTabHost"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/TabWidgetTheme"
+                    android:stateListAnimator="@null"
+                    android:focusableInTouchMode="false"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                        <TabWidget
+                            android:id="@android:id/tabs"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:tabStripEnabled="false"
+                            android:background="@drawable/button_grey"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:theme="@style/TabWidgetTheme"
+                            android:stateListAnimator="@null"
+                            />
+
+                        <FrameLayout
+                            android:id="@android:id/tabcontent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+
+                            <!-- POSTS -->
+                            <LinearLayout
+                                android:id="@+id/profileUserPostsTab"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="13dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:textColor="@color/colorMediumGrey"
+                                    android:text="0 posts"
+                                    android:id="@+id/profileUserPostsNumberTextView"
+                                    android:gravity="center_horizontal"
+                                    />
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/profileUserPostsRecyclerView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    />
+
+
+                            </LinearLayout>
+
+
+                            <!-- GROUPS -->
+                            <LinearLayout
+                                android:id="@+id/profileUserGroupsTab"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                >
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="13dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="@color/colorMediumGrey"
+                                    android:text="0 groups"
+                                    android:id="@+id/profileUserGroupsNumberTextView"
+                                    android:gravity="center_horizontal"
+                                    android:layout_marginBottom="5dp"
+                                    />
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/profileUserGroupsRecyclerView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="0dp"
+                                    />
+
+
+                            </LinearLayout>
+
+
+                        </FrameLayout>
+                    </LinearLayout>
+                </TabHost>
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

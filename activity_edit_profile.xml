@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.politics.karma.ActivityEditProfile"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme"
+        app:elevation="0dp"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/editProfileToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:title="edit bio"
+            app:titleTextColor="@color/colorMediumGrey"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorNude1"
+        >
+<!--
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editProfileUsernameEditText"
+
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="140"
+            android:background="@drawable/button_grey"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp"
+            android:textSize="14dp"
+            />
+-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/editProfileBioEditText"
+
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="2000"
+            android:gravity="top|left"
+            android:background="@drawable/button_grey"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp"
+            android:textSize="14dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/editProfileSaveProfileButton"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:text="save profile"
+                android:background="@drawable/button_primary"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="14dp"
+                />
+
+            <Button
+                android:id="@+id/editProfileCancelButton"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:text="cancel"
+                android:background="@drawable/button_primary"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="14dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

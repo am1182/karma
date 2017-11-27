@@ -1,0 +1,104 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.politics.karma.FragmentFollowing"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    >
+
+    <TabHost
+        android:id="@+id/fragmentFollowingTabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/TabWidgetTheme"
+        android:stateListAnimator="@null"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:tabStripEnabled="false"
+                android:background="@drawable/button_grey"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:theme="@style/TabWidgetTheme"
+                android:stateListAnimator="@null"
+                />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+
+                <!-- ALL -->
+                <LinearLayout
+                    android:id="@+id/followingAllTab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/followingAllRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="0dp"
+                        />
+
+
+                </LinearLayout>
+
+
+                <!-- GROUPS -->
+                <LinearLayout
+                    android:id="@+id/followingGroupsTab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/followingGroupsRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="0dp"
+                        />
+
+
+                </LinearLayout>
+
+
+                <!-- USERS -->
+                <LinearLayout
+                    android:id="@+id/followingUsersTab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/followingUsersRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="0dp"
+                        />
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</FrameLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.politics.karma.ActivityDetailedViewGroup"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme"
+        app:elevation="0dp"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mainToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:title="karma"
+            app:titleTextColor="@color/colorMediumGrey"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="6dp"
+    android:layout_margin="5dp"
+    app:cardElevation="0dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/button_nude1"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/detailedViewGroupGroupNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="group name"
+                android:textColor="@color/colorDarkGrey"
+                android:layout_weight="0.74"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                />
+<!--
+            <Button
+                android:id="@+id/detailedViewGroupGroupExpandButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_button_arrow_down_transparent"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:stateListAnimator="@null"
+                />
+-->
+        </LinearLayout>
+<!--
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#d4d4d4"
+            android:layout_marginTop="4dp"
+            />
+-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/detailedViewGroupGroupDescriptionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="12sp"
+                android:text="group description"
+                android:textColor="@color/colorDarkGrey"
+                android:textAlignment="center"
+                />
+
+
+        </LinearLayout>
+
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/detailedViewGroupGroupMembersTextView"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:text="0\nmembers"
+                android:textColor="@color/colorDarkGrey"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:background="@drawable/button_outline"
+                />
+
+            <TextView
+                android:id="@+id/detailedViewGroupGroupPostsTextView"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:text="0\nposts"
+                android:textColor="@color/colorDarkGrey"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:background="@drawable/button_outline"
+                />
+
+            <ToggleButton
+                android:id="@+id/detailedViewGroupJoinButton"
+                android:layout_width="60dp"
+                android:layout_height="39dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorWhite"
+                android:textOff="join"
+                android:textOn="joined"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                android:background="@drawable/button_follow"
+                android:stateListAnimator="@null"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/detailedViewGroupRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

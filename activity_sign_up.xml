@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.politics.karma.ActivitySignUp"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme"
+        app:elevation="0dp"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/signUpToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:title="karma"
+            app:titleTextColor="@color/colorMediumGrey"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/colorNude1"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_grey"
+            android:padding="8dp"
+            android:textSize="15dp"
+            android:hint="username"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:id="@+id/signupUsernameEditText"
+            />
+<!--
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_grey"
+            android:padding="8dp"
+            android:textSize="15dp"
+            android:hint="email"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:inputType="textEmailAddress"
+            android:id="@+id/signupEmailEditText"
+            />
+-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_grey"
+            android:padding="8dp"
+            android:textSize="15dp"
+            android:hint="password"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:inputType="textPassword"
+            android:id="@+id/signupPasswordEditText"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_grey"
+            android:padding="8dp"
+            android:textSize="15dp"
+            android:hint="confirm password"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:inputType="textPassword"
+            android:id="@+id/signupConfirmPasswordEditText"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="note: accounts cannot be recovered if you forget your password"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textSize="12sp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorMediumGrey"
+            />
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_nude5"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:textSize="15dp"
+            android:text="sign up"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:elevation="0dp"
+            android:id="@+id/signupButton"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="log in"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/signupLoginTextView"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.politics.karma.ActivityEditPost"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme"
+        app:elevation="0dp"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/editPostToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:title="edit post"
+            app:titleTextColor="@color/colorMediumGrey"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:background="@color/colorNude1"
+        >
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/editPostContentEditText"
+
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="20000"
+            android:gravity="top|left"
+            android:background="@drawable/button_grey"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp"
+            android:textSize="14dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+<!--
+            <Button
+                android:id="@+id/editPostAddImageButton"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:text="add image"
+                android:background="@drawable/button_primary"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="14dp"
+                />
+-->
+            <Button
+                android:id="@+id/editPostSavePostButton"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:text="save post"
+                android:background="@drawable/button_primary"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="14dp"
+                />
+
+            <Button
+                android:id="@+id/editPostCancelButton"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:text="cancel"
+                android:background="@drawable/button_primary"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="14dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

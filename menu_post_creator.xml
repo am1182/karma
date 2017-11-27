@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_editPost"
+        android:orderInCategory="100"
+        android:title="edit post"
+        />
+
+    <item
+        android:id="@+id/action_deletePost"
+        android:orderInCategory="101"
+        android:title="delete post"
+        />
+
+</menu>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.politics.karma.ActivityDetailedViewPost"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme"
+        app:elevation="0dp"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/detailedPostToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:title="karma"
+            app:titleTextColor="@color/colorMediumGrey"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorNude1"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:gravity="center_vertical"
+                    android:background="@color/colorNude2"
+
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/detailedViewPostUsernameTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="username"
+                            android:textColor="@color/colorDarkGrey"
+                            />
+
+                        <TextView
+                            android:id="@+id/detailedViewPostDateTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:text="12/06/2017"
+                            android:textColor="@color/colorMediumDarkGrey"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/detailedViewPostGroupNameTextView"
+                        android:layout_width="100dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/button_white"
+                        android:text="group name"
+                        android:textColor="@color/colorDarkGrey"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_weight="0.97" />
+
+                    <Button
+                        android:id="@+id/detailedViewPostExpandButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/ic_button_arrow_down_transparent"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:stateListAnimator="@null"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="0dp"
+                        />
+
+                </LinearLayout>
+<!--
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#d4d4d4"
+                    android:layout_marginTop="4dp"
+                    />
+-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/detailedViewPostContentTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="12sp"
+                        android:text="content"
+                        android:textColor="@color/colorDarkGrey"
+                        android:layout_margin="5dp"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="5dp"
+                    >
+
+                    <Button
+                        android:id="@+id/detailedViewPostCommentsButton"
+                        android:layout_width="26dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/ic_button_comment"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/detailedViewPostCommentsNumberTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="190dp"
+                        android:text="4"
+                        android:textSize="12dp"
+                        android:textColor="@color/colorDarkGrey"
+                        />
+
+                    <ToggleButton
+                        android:id="@+id/detailedViewPostLikeButton"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:textOn=" "
+                        android:textOff=" "
+                        android:stateListAnimator="@null"
+                        android:background="@drawable/button_like"
+                        />
+
+                    <TextView
+                        android:id="@+id/detailedViewPostLikesTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="12"
+                        android:textSize="12dp"
+                        android:textColor="@color/colorDarkGrey"
+                        />
+
+                    <ToggleButton
+                        android:id="@+id/detailedViewPostDislikeButton"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:textOn=" "
+                        android:textOff=" "
+                        android:stateListAnimator="@null"
+                        android:background="@drawable/button_dislike"
+                        />
+
+                    <TextView
+                        android:id="@+id/detailedViewPostDislikesTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="34"
+                        android:textSize="12dp"
+                        android:textColor="@color/colorDarkGrey"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/detailedViewPostCommentsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/colorMediumGrey"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_grey"
+            android:id="@+id/detailedViewPostAddCommentEditText"
+            android:maxLines="4"
+            android:inputType="textMultiLine"
+            android:hint="add comment"
+            android:padding="4dp"
+            android:textSize="14dp"
+            android:textColor="@color/colorDarkGrey"
+            />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:text="post"
+            android:textAllCaps="false"
+            android:background="@drawable/button_primary"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null"
+            android:id="@+id/detailedViewPostAddCommentButton"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
